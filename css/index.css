@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "MiSans";
+    src: url("../fonts/MiSans VF.ttf") format("truetype");,
+}
+@font-face {
+    font-family: "Noto Sans SC";
+    src: url("../fonts/NotoSansSC-VariableFont_wght.ttf") format("truetype");,
+}
+body{
+    padding: 0;
+    margin:0;
+    background: rgba(171, 169, 169, 0.09);
+    font-family: 'MiSans', 'Noto Sans SC',sans-serif;
+    font-size: 14px;
+}
+
+#Search_box{
+    z-index:20;
+    position:fixed;
+    top:0;
+    width:100%;
+    height:5%;
+    padding:5px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    transition: backdrop-filter 0.3s ease;
+}
+#Search_box.blurred {
+    background: rgba(255, 255, 255, 0.84);
+    backdrop-filter: blur(20px);
+    transition: backdrop-filter 0.3s ease;
+}
+
+[list]::-webkit-calendar-picker-indicator {
+    display: none !important;
+}
+
+#mi_logo{
+    width: auto;height: 80%;
+}
+.icon{
+    width: auto;height: 80%;
+    margin-right: 15px;
+}
+#SearchText{
+    padding:5px 30px;
+    margin-left:10px;
+    margin-right: 20px;
+    background-image: url(../image/icons/Search.png);
+    background-size: 8%;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-color:White;
+    border: none;
+    border-radius: 15px
+}
+#SearchText:focus{
+    outline: none;
+}
+#banner {
+    position: relative;
+    top:0;
+    margin:0;
+    width: 100%;
+    height: 300px; /* 假设轮播图高度为300px */
+}
+#banner_ul {
+    margin: 5px auto;
+    height: 25px;
+}
+#banner_ul ul {
+    list-style: none;
+    margin-left: 50px;
+}
+#banner_ul li {
+    display: inline;
+}
+#banner_ul a {
+
+    color: #fff;
+    text-decoration: none;
+    padding: 1px 15px;
+}
+
+.banner_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(128, 128, 128, 0.15);
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    z-index: 10;
+    font-size: 18px;
+    border-radius: 50%;
+}
+#banner_button_left{
+    left: 5px;
+}
+#banner_button_right{
+    right: 5px;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+.banner_pic{
+    width:100%
+}
+
+.sp_list_img {
+    width: 70%;
+    height: 50%;
+}
+.sp_list_text{
+    color:gray;
+}
+
+.nav_list {
+    column-count: 2;
+    column-gap: 0;
+}
+
+.ad_list {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}
+.sp_list_text_1{
+    color:Black;
+    font-weight: 570;
+    font-size: medium;
+}
+.sp_list_text_2{
+    color:gray;
+    font-weight: normal;
+    font-size: small;
+}
+.sp_list_text_3{
+    color:gray;
+    font-weight: normal;
+    font-size: small;
+}
+
+footer a{
+    color:gray;
+    text-decoration: none;
+    border:gray 1px solid;
+    border-radius: 3px;
+}
