@@ -9,7 +9,7 @@
 </head>
 <body>
 <header id="Search_box" >
-    <img id="mi_logo" src="./image/icons/mi.png" alt="" >
+    <a id="mi_logo_href" href="#"><img id="mi_logo" src="./image/icons/mi.png" alt="" ></a>
     <label for="SearchText"></label><input type="text"  list="things" name="SearchText" autoComplete="off" placeholder="点击以输入内容" id="SearchText">
     <datalist id="things">
         <option value="Xiaomi 15">
@@ -20,82 +20,114 @@
     <a href="https://www.xiaomi.cn/" target="_blank" class="icon"><img class="icon" src="./image/icons/community.png" alt=""></a>
     <a href="https://www.mi.com/shop" target="_blank" class="icon"><img class="icon" src="./image/icons/Shop.png" alt=""></a>
 </header>
-<div>
-
-    <div  id="banner">
-        <button id="banner_button_left" class="banner_button" onClick="afterSlide()"><</button>
-        <div class="slide">
-            <a href="https://www.mi.com/prod/redmi-buds-6" target="_blank"><img class="banner_pic" src="./image/Banner/1.jpg"></a>
-        </div>
-        <div class="slide">
-            <a href="https://www.mi.com/xiaomi-14" target="_blank"><img class="banner_pic" src="./image/Banner/2.jpg"></a>
-        </div>
-        <div class="slide">
-            <a href="https://www.mi.com/redmi-k70" target="_blank"><img class="banner_pic" src="./image/Banner/3.jpg"></a>
-        </div>
-        <div class="slide">
-            <a href="https://m.mi.com/t/UOqXAS" target="_blank"><img class="banner_pic" src="./image/Banner/4.jpg"></a>
-        </div>
-        <div class="slide">
-            <a href="https://www.mi.com/shop/buy/detail?product_id=19142&cfrom=search" target="_blank"><img class="banner_pic" src="./image/Banner/5.jpg"></a>
-        </div>
-        <div class="slide">
-            <a href="https://www.mi.com/shop/buy/detail?product_id=19530&cfrom=search" target="_blank"><img class="banner_pic" src="./image/Banner/6.jpg"></a>
-        </div>
-        <div class="slide">
-            <a href="https://www.mi.com/shop/buy/detail?product_id=20489&cfrom=search" target="_blank"><img class="banner_pic" src="./image/Banner/7.jpg"></a>
-        </div>
-        <button id="banner_button_right" class="banner_button" onClick="nextSlide()">></button>
-    </div>
-</div>
-<div >
-    <div class="nav_list">
-        <div class="ad_list" onclick="window.open('https://www.mi.com/redmi-books/g-pro-game','_self')">
-            <img class="sp_list_img" src="./image/contain/loptop.png" alt="">
-            <p class="sp_list_text_1">RedMI G Laptop</p>
-            <p class="sp_list_text_2">狂暴性能  电竞旗舰</p>
-            <p class="sp_list_text_3">8299 元 <s>8499 元</s></p>
-        </div>
-        <div class="ad_list" onclick="window.open('./index.html','_self')">
-            <img class="sp_list_img" src="./image/contain/pad.png" alt="">
-            <p class="sp_list_text_1">Xiaomi Pad 7 Pro</p>
-            <p class="sp_list_text_2">第三代 骁龙8s旗舰处理器、小米澎湃OS 2</p>
-            <p class="sp_list_text_3">2799 元</p>
-        </div>
-        <div class="ad_list" onclick="window.open('./index.html','_self')">
-            <img class="sp_list_img"  src="./image/contain/tv.png" alt="">
-            <p class="sp_list_text_1">小米电视 S 75 Mini LED 75英寸</p>
-            <p class="sp_list_text_2">Mini LED 512级背光分区、4K 240Hz超高刷</p>
-            <p class="sp_list_text_3">4599 元 <s>5599 元</s></p>
-        </div>
-        <div class="ad_list" onclick="window.open('https://www.mi.com/redmi-buds-5-pro','_self')">
-            <img class="sp_list_img" src="./image/contain/tws.png" alt="">
-            <p class="sp_list_text_1">Redmi Buds 5 Pro</p>
-            <p class="sp_list_text_2">同轴双单元 旗舰音质、 52dB/4kHz 旗舰降噪、 49ms低延迟</p>
-            <p class="sp_list_text_3">399 元</p>
-        </div>
-        <div class="ad_list" onclick="window.open('https://www.mi.com/redmi-monitors/g27?product_id=1230800382&cfrom=search','_self')">
-            <img class="sp_list_img" src="./image/contain/xsq.png" alt="">
-            <p class="sp_list_text_1">Redmi电竞显示器 G27</p>
-            <p class="sp_list_text_2">全民热血 G 时代</p>
-            <p class="sp_list_text_3">649 元 <s>999 元</s></p>
-        </div>
-        <div class="ad_list" onclick="window.open('https://www.mi.com/shop/buy/detail?product_id=15820&cfrom=search','_self')">
-            <img class="sp_list_img" src="./image/contain/router.png" alt="">
-            <p class="sp_list_text_1">Redmi路由器AX6000</p>
-            <p class="sp_list_text_2">8数据流，高速并发</p>
-            <p class="sp_list_text_3">379 元 <s>499 元</s></p>
+<main>
+    <div>
+        <div  id="banner">
+            <button id="banner_button_left" class="banner_button" onClick="afterSlide()"><</button>
+            <div class="slide">
+                <a href="https://www.mi.com/prod/redmi-buds-6" target="_blank"><img class="banner_pic" src="./image/Banner/1.jpg"></a>
+            </div>
+            <div class="slide">
+                <a href="https://www.mi.com/xiaomi-14" target="_blank"><img class="banner_pic" src="./image/Banner/2.jpg"></a>
+            </div>
+            <div class="slide">
+                <a href="https://www.mi.com/redmi-k70" target="_blank"><img class="banner_pic" src="./image/Banner/3.jpg"></a>
+            </div>
+            <div class="slide">
+                <a href="https://m.mi.com/t/UOqXAS" target="_blank"><img class="banner_pic" src="./image/Banner/4.jpg"></a>
+            </div>
+            <div class="slide">
+                <a href="https://www.mi.com/shop/buy/detail?product_id=19142&cfrom=search" target="_blank"><img class="banner_pic" src="./image/Banner/5.jpg"></a>
+            </div>
+            <div class="slide">
+                <a href="https://www.mi.com/shop/buy/detail?product_id=19530&cfrom=search" target="_blank"><img class="banner_pic" src="./image/Banner/6.jpg"></a>
+            </div>
+            <div class="slide">
+                <a href="https://www.mi.com/shop/buy/detail?product_id=20489&cfrom=search" target="_blank"><img class="banner_pic" src="./image/Banner/7.jpg"></a>
+            </div>
+            <button id="banner_button_right" class="banner_button" onClick="nextSlide()">></button>
         </div>
     </div>
-    <br>
-</div>
+    <nav id="navs" style="max-width: 100%;display: flex;margin-bottom: 10px">
+        <div onclick="window.open('https://m.mi.com/t/nPWyZT')">
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <img src="./image/icons/news.png" alt="" style="width:40%">
+            </div>
+            <div  style="display: flex;justify-content: center;align-items: center;">
+                <p>小米上新</p>
+            </div>
+        </div>
+        <div onclick="window.open('https://m.mi.com/mfbs/dghd/m_universal?_rt=rn&pageid=11212&pdl=mishop&sign=2617d49fa1f63ba7a3de34a2ba0cfe51&spmref=MiShop_M.cms_26.3441277.2&scmref=cms.0.0.0.0.0.0.0')">
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <img src="./image/icons/pad.png" alt="" style="width:40%">
+            </div>
+            <div  style="display: flex;justify-content: center;align-items: center;">
+                <a href="">电脑/平板</a>
+            </div>
+        </div>
+        <div onclick="window.open('https://m.mi.com/mfbs/dghd/m_universal?_rt=rn&pageid=12100&pdl=mishop&sign=bda77811e584204e2b04fd7326b1803c&spmref=MiShop_M.cms_26.3441276.3&scmref=cms.0.0.0.0.0.0.0')">
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <img src="./image/icons/phone.png" alt="" style="width:40%">
+            </div>
+            <div  style="display: flex;justify-content: center;align-items: center;">
+                <a href="">手机</a>
+            </div>
+        </div>
+        <div onclick="window.open('https://m.mi.com/search/list?key=%E7%94%B5%E8%A7%86&spmref=MiShop_M.cms_15753.3675702.1&scmref=cms.0.0.0.0.0.0.0')">
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <img src="./image/icons/tv.png" alt="" style="width:40%">
+            </div>
+            <div  style="display: flex;justify-content: center;align-items: center;">
+                <a href="">电视</a>
+            </div>
+        </div>
+    </nav>
+    <div >
+        <div class="nav_list">
+            <div class="ad_list" onclick="window.open('https://www.mi.com/redmi-books/g-pro-game','_self')">
+                <img class="sp_list_img" src="./image/contain/loptop.png" alt="">
+                <p class="sp_list_text_1">RedMI G Laptop</p>
+                <p class="sp_list_text_2">狂暴性能  电竞旗舰</p>
+                <p class="sp_list_text_3">8299 元 <s>8499 元</s></p>
+            </div>
+            <div class="ad_list" onclick="window.open('./index.html','_self')">
+                <img class="sp_list_img" src="./image/contain/pad.png" alt="">
+                <p class="sp_list_text_1">Xiaomi Pad 7 Pro</p>
+                <p class="sp_list_text_2">第三代 骁龙8s旗舰处理器、小米澎湃OS 2</p>
+                <p class="sp_list_text_3">2799 元</p>
+            </div>
+            <div class="ad_list" onclick="window.open('./index.html','_self')">
+                <img class="sp_list_img"  src="./image/contain/tv.png" alt="">
+                <p class="sp_list_text_1">小米电视 S 75 Mini LED 75英寸</p>
+                <p class="sp_list_text_2">Mini LED 512级背光分区、4K 240Hz超高刷</p>
+                <p class="sp_list_text_3">4599 元 <s>5599 元</s></p>
+            </div>
+            <div class="ad_list" onclick="window.open('https://www.mi.com/redmi-buds-5-pro','_self')">
+                <img class="sp_list_img" src="./image/contain/tws.png" alt="">
+                <p class="sp_list_text_1">Redmi Buds 5 Pro</p>
+                <p class="sp_list_text_2">同轴双单元 旗舰音质、 52dB/4kHz 旗舰降噪、 49ms低延迟</p>
+                <p class="sp_list_text_3">399 元</p>
+            </div>
+            <div class="ad_list" onclick="window.open('https://www.mi.com/redmi-monitors/g27?product_id=1230800382&cfrom=search','_self')">
+                <img class="sp_list_img" src="./image/contain/xsq.png" alt="">
+                <p class="sp_list_text_1">Redmi电竞显示器 G27</p>
+                <p class="sp_list_text_2">全民热血 G 时代</p>
+                <p class="sp_list_text_3">649 元 <s>999 元</s></p>
+            </div>
+            <div class="ad_list" onclick="window.open('https://www.mi.com/shop/buy/detail?product_id=15820&cfrom=search','_self')">
+                <img class="sp_list_img" src="./image/contain/router.png" alt="">
+                <p class="sp_list_text_1">Redmi路由器AX6000</p>
+                <p class="sp_list_text_2">8数据流，高速并发</p>
+                <p class="sp_list_text_3">379 元 <s>499 元</s></p>
+            </div>
+        </div>
+        <br>
+    </div>
+</main>
 <footer style="color:gray;text-align: center">
     <a href="#" style="border: none">返回顶部</a>
     <p >Copyright © 2024 present 林间追风</p>
     <p >Xiaomi,Xiaomi 社区 图标归属 <a  href="https://www.mi.com/about/index.html">小米</a> 所有</p>
-    <span>字体来源: <a href="https://fonts.google.com/">Google Fonts</a> , <a href="https://hyperos.mi.com/font/zh/" >Mi Sans</a></span>
-    <p>其他图标来源: <a href="https://yesicon.app/"><i>yesicon</i></a>,开源协议：MIT</p>
-
 </footer>
 </body>
 </html>

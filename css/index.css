@@ -1,3 +1,13 @@
+html{
+    /*清除特殊效果*/
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+    -webkit-appearance:none;
+    outline: none;
+    border: none;
+}
 @font-face {
     font-family: "MiSans";
     src: url("../fonts/MiSans VF.ttf") format("truetype");,
@@ -6,6 +16,19 @@
     font-family: "Noto Sans SC";
     src: url("../fonts/NotoSansSC-VariableFont_wght.ttf") format("truetype");,
 }
+/* 当屏幕宽度大于等于576px时 */
+@media (min-width: 576px) {
+    main {
+        max-width: 540px; /* 设置宽度为540px */
+    }
+}
+
+/* 当屏幕宽度大于等于768px时 */
+@media (min-width: 768px) {
+    main {
+        max-width: 720px; /* 设置宽度为720px */
+    }
+}
 body{
     padding: 0;
     margin:0;
@@ -13,7 +36,9 @@ body{
     font-family: 'MiSans', 'Noto Sans SC',sans-serif;
     font-size: 14px;
 }
-
+main{
+    text-align: center;
+}
 #Search_box{
     z-index:20;
     position:fixed;
@@ -36,8 +61,10 @@ body{
 [list]::-webkit-calendar-picker-indicator {
     display: none !important;
 }
-
 #mi_logo{
+    width: auto;height: 100%;
+}
+#mi_logo_href{
     width: auto;height: 80%;
 }
 .icon{
@@ -60,11 +87,18 @@ body{
     outline: none;
 }
 #banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     top:0;
     margin:0;
     width: 100%;
     height: 300px; /* 假设轮播图高度为300px */
+}
+#banner div a img{
+    max-width: 432px;
+    max-height: 304px;
 }
 #banner_ul {
     margin: 5px auto;
@@ -101,6 +135,13 @@ body{
 }
 #banner_button_right{
     right: 5px;
+}
+#navs{
+    width: 100%;
+}
+#navs div a{
+    color: black;
+    text-decoration: none;
 }
 .slide {
     position: absolute;
