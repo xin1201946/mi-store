@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米商城</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/log.js" defer></script>
     <script src="./js/index.js" defer></script>
 </head>
 <body>
 <header id="Search_box" >
-    <a id="mi_logo_href" href="#"><img id="mi_logo" src="./image/icons/mi.png" alt="" ></a>
+    <a id="mi_logo_href" href="#"><img id="mi_logo" src="./image/icons/mi-nobackground.png" alt="" ></a>
     <label for="SearchText"></label><input type="text"  list="things" name="SearchText" autoComplete="off" placeholder="点击以输入内容" id="SearchText">
     <datalist id="things">
         <option value="Xiaomi 15">
@@ -17,8 +18,8 @@
         <option value="Xiaomi Pad 7 Pro">
         <option value="RedMI G Laptop">
     </datalist>
-    <a href="https://www.xiaomi.cn/" target="_blank" class="icon"><img class="icon" src="./image/icons/community.png" alt=""></a>
-    <a href="https://www.mi.com/shop" target="_blank" class="icon"><img class="icon" src="./image/icons/Shop.png" alt=""></a>
+    <a href="https://www.xiaomi.cn/" target="_blank" class="icon"><img class="icon" id="account" src="./image/icons/account.png" alt=""></a>
+    <a href="https://www.mi.com/shop" target="_blank" class="icon"><img class="icon" id="share" src="./image/icons/share.png" alt=""></a>
 </header>
 <main>
     <div>
@@ -54,7 +55,7 @@
                 <img src="./image/icons/news.png" alt="" style="width:40%">
             </div>
             <div  style="display: flex;height:18px;justify-content: center;align-items: center;">
-                <p>小米上新</p>
+                <a href="https://m.mi.com/t/nPWyZT">小米上新</a>
             </div>
         </div>
         <div onclick="window.location.href='https://m.mi.com/mfbs/dghd/m_universal?_rt=rn&pageid=11212&pdl=mishop&sign=2617d49fa1f63ba7a3de34a2ba0cfe51&spmref=MiShop_M.cms_26.3441277.2&scmref=cms.0.0.0.0.0.0.0'">
@@ -62,7 +63,9 @@
                 <img src="./image/icons/pad.png" alt="" style="width:40%">
             </div>
             <div  style="display: flex;justify-content: center;align-items: center;">
-                <a href="">电脑/平板</a>
+                <a href="https://m.mi.com/mfbs/dghd/m_universal?_rt=rn&pageid=11212&pdl=mishop&sign=2617d49fa1f63ba7a3de34a2ba0cfe51&spmref=MiShop_M.cms_26.3441277.2&scmref=cms.0.0.0.0.0.0.0">
+                    电脑/平板
+                </a>
             </div>
         </div>
         <div onclick="window.location.href='https://m.mi.com/mfbs/dghd/m_universal?_rt=rn&pageid=12100&pdl=mishop&sign=bda77811e584204e2b04fd7326b1803c&spmref=MiShop_M.cms_26.3441276.3&scmref=cms.0.0.0.0.0.0.0'">
@@ -70,7 +73,9 @@
                 <img src="./image/icons/phone.png" alt="" style="width:40%">
             </div>
             <div  style="display: flex;justify-content: center;align-items: center;">
-                <a href="">手机</a>
+                <a href="https://m.mi.com/mfbs/dghd/m_universal?_rt=rn&pageid=12100&pdl=mishop&sign=bda77811e584204e2b04fd7326b1803c&spmref=MiShop_M.cms_26.3441276.3&scmref=cms.0.0.0.0.0.0.0">
+                    手机
+                </a>
             </div>
         </div>
         <div onclick="window.location.href='https://m.mi.com/t/rVxAAH'">
@@ -78,7 +83,7 @@
                 <img src="./image/icons/k80.png" alt="" style="width:40%">
             </div>
             <div  style="display: flex;justify-content: center;align-items: center;">
-                <a href="">新品预约</a>
+                <a href="https://m.mi.com/t/rVxAAH">新品预约</a>
             </div>
         </div>
     </nav>

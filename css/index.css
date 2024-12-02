@@ -2,7 +2,6 @@ html{
     /*清除特殊效果*/
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     -webkit-user-select: none;
-    -moz-user-focus: none;
     -moz-user-select: none;
     -webkit-appearance:none;
     outline: none;
@@ -64,6 +63,9 @@ main{
 #mi_logo{
     width: auto;height: 100%;
 }
+#mi_logo.hidden{
+    display: none;
+}
 #mi_logo_href{
     width: auto;height: 80%;
 }
@@ -71,12 +73,20 @@ main{
     width: auto;height: 80%;
     margin-right: 15px;
 }
+#account.black{
+    filter: invert(100%);
+}
+#share.black{
+    filter: invert(100%);
+}
 #SearchText{
     padding:5px 30px;
     margin-left:10px;
+    width:100%;
+    height:45%;
     margin-right: 20px;
     background-image: url(../image/icons/Search.png);
-    background-size: 8%;
+    background-size: 20px;
     background-repeat: no-repeat;
     background-position: 5px;
     background-color:White;
@@ -122,7 +132,7 @@ main{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(128, 128, 128, 0.15);
+    background-color: rgba(252, 252, 252, 0.45);
     color: #000000;
     border: none;
     padding: 10px 15px;

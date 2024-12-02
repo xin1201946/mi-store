@@ -1,11 +1,33 @@
+
+const log = prettyLog()
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 const header = document.getElementById('Search_box');
+const mi_logo=document.getElementById('mi_logo');
+const share = document.getElementById('share');
+const account = document.getElementById('account');
+//菜单打印
+let hitokoto=''
+fetch('https://international.v1.hitokoto.cn/')
+    .then(response => response.json())
+    .then(data => {
+        log.info(data.from_who === null ? data.from: data.from_who,data.hitokoto);
+    })
+    .catch(error => {
+        log.error('Error fetching data: ', error);
+    });
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 5) {
         header.classList.add('blurred');
+        mi_logo.classList.add('hidden');
+        share.classList.add('black')
+        account.classList.add('black');
     } else {
         header.classList.remove('blurred');
+        mi_logo.classList.remove('hidden');
+        share.classList.remove('black')
+        account.classList.remove('black');
     }
 });
 const inputElement = document.getElementById('SearchText');
